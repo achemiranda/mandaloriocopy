@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire A Bounty Hunter</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mandalorian.css">
+</head>
+
+<body>
+
+    <header>
+        <button class="menu_btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <div>
+            <input type="text" id="search" placeholder="Este es el camino">
+            <button class="search_btn">Search</button>
+        </div>
+        <a href="" class="logo-text">MANDALORIANS For HIRE</a>
+    </header>
+
+    <div class="menu">
+        <ul>
+            <li class="menu-list-item"><a href="">Home</a></li>
+            <li class="menu-list-item"><a href="">About</li>
+            <li class="menu-list-item"><a href="">Missions</li>
+            <li class="menu-list-item"><a href="">Weapons</li>
+            <li class="menu-list-item"><a href="">Office</li>
+        </ul>
+
+    </div>
+    <main>
+        <div class="container">
+            <div class="mandos">
+                <span class="mando">M</span>
+                <span>i am a mando</span>
+            </div>
+            <div class="text-container">
+                <h1>BECOME A MANDO</h1>
+                <p>Nuestro secreto es nuestra supervivencia. nuestra supervivencia es nuestra fuerza.</p>
+                <button class="like_btn">JOIN!</button>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h1 class="mando-label">Mandalorians</h1>
+        </div>
+        <div class="navigations">
+            <ul>
+                <li><a href="">Terms of Hire</a></li>
+                <li><a href="">Spacial Jurisdictions</a></li>
+                <li><a href="">Security</a></li>
+                <li><a href="">Insurances</a></li>
+            </ul>
+
+        </div>
+        <div class="social-links">
+            <span><a href="facebook"><i class="fab fa-facebook-f"></i></a></span>
+            <span><a href="twitter"><i class="fab fa-teitter"></i></a></span>
+            <span><a href="instagram"><i class="fab fa-instagram"></i></a></span>
+        </div>
+
+        <h3 class="copyright">2021&copy;Mandalorian All Rights To Kill Reserved</h3>
+    </footer>
+</body>
+<script>
+    const menu_btn = document.querySelector('.menu_btn')
+    const menu = document.querySelector('.menu')
+    menu_btn.addEventListener('click', () => {
+        menu.classList.toggle('active')
+        var audio = new Audio('sounds/mandalorian.mp3');
+        audio.play()
+
+    })
+</script>
+
+</html>

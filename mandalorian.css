@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: mandalore;
+    src: url('img/mandalore/mandalore.ttf') format('truetype');
+}
+
+:root {
+    --primary-color: #fff;
+}
+
+body {
+    background: linear-gradient(#d10870, #6d0f63 50%);
+
+    font-size: 1.5em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background: #23164e;
+}
+
+.logo-text {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-family: mandalore;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+header div {
+    display: flex;
+    width: 500px;
+    position: relative;
+}
+
+#search {
+    padding: 10px 80px 10px 5px;
+    border-radius: 20px;
+    border: 3px solid var(--primary-color);
+    width: 100%;
+
+    background: transparent;
+    color: var(--primary-color);
+    text-indent: 10px;
+    /*Establece la tabulación o indentación de la primera línea del texto de un elemento*/
+
+}
+
+.search_btn {
+    position: absolute;
+    right: 0;
+    margin: 2.5px 3.5px 5px 0;
+    border-radius: 15px;
+    padding: 10px 15px;
+    color: #fff;
+    outline: none;
+    background: #d10870;
+    border: none;
+}
+
+.search_btn:hover {
+    background-color: #4cdf39;
+}
+
+.menu_btn {
+    background-color: #d10870;
+    padding: 10px;
+    outline: none;
+}
+
+.menu_btn div {
+    width: 30px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 5px;
+
+}
+
+.menu_btn div:nth-of-type(2) {
+    width: 20px
+}
+
+.menu {
+    position: absolute;
+    top: 13%;
+    width: 50%;
+    height: 85%;
+    background-image: url('img/mandos.jpg');
+    background-size:100% ;
+    background-repeat: no-repeat;
+    background: cover;
+    transform: translatex(-100%);
+    transform: .5s;
+    clip-path: polygon(0 0, 70% 0, 54% 100%, 0% 100%);
+    /*La propiedad clip-path es parte del nuevo módulo de máscaras ( Masking Modulestar) de CSS3 y la podemos utilizar para recortar imágenes ( y no solo imagenes ).*/
+}
+
+.menu-list-item {
+    background-color: #d1087050;
+    margin-bottom: 20px;
+    padding: 40px 0;
+
+}
+
+.menu-list-item a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 900;
+    font-size: 30px;
+    font-family: mandalore;
+    margin-left: 40px;
+}
+
+.menu-list-item a:hover {
+    color: #23164e;
+
+}
+
+.active {
+    transform: translatex(0);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.container div {
+    height: 100vh;
+}
+
+.mandos {
+    background-image: url('img/hireamando.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: mandalore;
+    color: var(--primary-color);
+    text-align: center;
+    border-top-right-radius: 300px;
+
+}
+
+.mandos span {
+    display: block;
+}
+
+.mando span:last-child {
+
+    font-size: 40px;
+    
+}
+
+.mando {
+    font-size: 35em;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--primary-color);
+    /*La propiedad  CSS -webkit-text-stroke especifica la  anchura y  color del trazo para los caractéres de texto. Esta forma es una manera corta en relación con la forma larga que necesita usar las propiedades-webkit-text-stroke-width y -webkit-text-stroke-color.*/
+}
+
+.text-container {
+    background: url('img/mandalorio.png'), linear-gradient(#d10870, #6d0f63);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    counter-reset: var(--primary-color);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-bottom-left-radius: 400px;
+}
+
+.text-container p {
+    
+    margin-left: 20px 0;
+    color: var(--primary-color);
+
+}
+
+.like_btn {
+    padding: 10px 30px;
+    border: none;
+    background-color: #6345c7;
+    font-family: mandalore;
+    letter-spacing: 5px;
+}
+
+
+.like_btn p {
+    text-decoration: none;
+}
+
+.like_btn p {
+    text-decoration: none;
+}
+
+.like_btn:hover {
+    background-color: #2ab0e6;
+}
+
+footer {
+    background-color: #141c2c;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #0c94b8;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0;
+
+}
+
+.mando-label {
+    font-family: mandalore;
+    color: #d10870;
+
+}
+
+.navigations ul {
+    list-style: none;
+}
+
+.navigations li {
+    display: inline-block;
+    margin-left: 5px 10px;
+}
+
+.navigations ul li a {
+    text-decoration: none;
+    color: #0c94b8;
+
+}
+
+.navigations ul li a:hover {
+    text-decoration: none;
+    color: #a2d9e9;
+
+}
+
+footer div:last-child {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+}
+
+.social-links span {
+    margin: 0 20px;
+}
+
+i {
+    color: #8c87b8;
+}
+
+select {
+    background-color: #0c87b8
+}
+
+@media(max-width:960px) {
+    header div {
+        width: 200px
+    }
+
+    .menu {
+        width: 100%
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .mandos {
+        border-top-right-radius: 0;
+    }
+
+    footer div:last-child {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    footer div:last-child * {
+        margin-top: 5px;
+    }
+}
